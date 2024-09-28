@@ -1,0 +1,112 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Main Home Container */
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Create Note Section Styling */
+  .create-note-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #4CAF50; /* Green border */
+  }
+  
+  .create-note-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .create-note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .create-note-form label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .create-note-form input[type="text"],
+  .create-note-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .create-note-form input[type="text"]:focus,
+  .create-note-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  
+  .create-note-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .create-note-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .create-note-form input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  /* Notes Section */
+  .notes-section {
+    padding: 20px;
+  }
+  
+  .notes-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Masonry Layout for Notes */
+  .notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .create-note-section {
+      padding: 20px;
+    }
+  
+    .notes-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+.note-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease;
+    /* Set a fixed height */
+    height: 200px; /* or your preferred height */
+    /* Use this property to handle overflow */
+    overflow: hidden; /* Hides any overflow */
+  }
+  
+  .note-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .note-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .note-content {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    /* Control the maximum height of the content */
+    max-height: 100px; /* Adjust based on your design */
+    overflow-y: auto; /* Adds scroll if content overflows */
+  }
+  
+  .note-date {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .note-container {
+      padding: 10px;
+      height: 180px; /* Adjust height for smaller screens if needed */
+    }
+  
+    .note-title {
+      font-size: 1.2rem;
+    }
+  
+    .note-content {
+      font-size: 1rem;
+    }
+  }
+  
